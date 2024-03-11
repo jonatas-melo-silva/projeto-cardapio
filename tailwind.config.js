@@ -2,7 +2,9 @@
 module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      base: '#F6F7F8'
+    },
   },
   plugins: [],
 };
