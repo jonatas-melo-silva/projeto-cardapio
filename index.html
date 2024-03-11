@@ -15,7 +15,28 @@
     />
     <link rel="stylesheet" href="./styles/output.css" />
   </head>
-  <body>
-    Cardápio
+  <body class="bg-base text-white">
+    <header class="w-full h-[420px] bg-zinc-900 bg-header bg-cover bg-center">
+      <div
+        class="h-full w-full flex flex-col items-center justify-center gap-8"
+      >
+        <img
+          src="./assets/hamb-1.png"
+          alt="Logo DevBurger"
+          class="h-44 w-44 rounded-full shadow-lg hover:scale-110 duration-200"
+        />
+        <div class="flex flex-col items-center justify-center gap-1">
+          <h1 class="text-3xl text-white mt-4 mb-2 font-bold">Dev burger</h1>
+          <span>Rua dev sucesso, 12, Campo Grande, MS</span>
+        </div>
+        <button
+          class="bg-green-600 py-2 px-4 rounded-md -mt-4 font-bold"
+          id="date-span"
+          aria-readonly="horário de funcionamento"
+        >
+          Seg á Dom - 18:00 as 22:00
+        </button>
+      </div>
+    </header>
   </body>
 </html>

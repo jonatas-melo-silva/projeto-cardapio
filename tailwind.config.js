@@ -3,7 +3,12 @@ module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
     extend: {
-      base: '#F6F7F8'
+      colors: {
+        base: "F6F7F8",
+      },
+      backgroundImage: {
+        header: "url('/assets/bg.png')",
+      },
     },
   },
   plugins: [],
