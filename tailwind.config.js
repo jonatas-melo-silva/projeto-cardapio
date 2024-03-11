@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        base: "F6F7F8",
+        home: "#F6F7F8",
+        footer: "#FF3131"
       },
       backgroundImage: {
         header: "url('/assets/bg.png')",
