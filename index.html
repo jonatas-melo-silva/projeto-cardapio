@@ -10,12 +10,20 @@
     <title>Cardápio</title>
 
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/output.css" />
   </head>
-  <body class="bg-home text-white">
+  <body class="bg-home text-white relative">
     <header class="w-full h-[420px] bg-zinc-900 bg-header bg-cover bg-center">
       <div
         class="h-full w-full flex flex-col items-center justify-center gap-8"
@@ -39,9 +47,227 @@
       </div>
     </header>
 
-    <footer class="flex items-center justify-center gap-2 bg-footer py-5">
-      <span class="font-bold">(1) Veja seu carrinho</span>
-      <img src="./assets/shopping-cart.svg" alt="Carrinho de compras" />
+    <h1 class="font-bold text-2xl text-black text-center pt-11 pb-4">
+      Conheça nosso menu
+    </h1>
+
+    <main id="menu" class="pb-24">
+      <section
+        class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 mx-auto max-w-7xl px-4"
+      >
+        <div class="flex gap-2">
+          <img
+            class="h-28 w-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+            src="./assets/hamb-1.png"
+            alt="Cheese Burger Duplo"
+          />
+
+          <div class="w-full flex flex-col justify-around">
+            <strong class="font-bold text-sm text-black"
+              >Cheese Burger Duplo</strong
+            >
+            <p class="text-xs leading-relaxed text-black">
+              Pão levinho de fermentação natural da Trigou, burger 160g, queijo
+              prato e maionese da casa.
+            </p>
+
+            <div class="flex items-center gap-2 justify-between">
+              <p class="text-base font-medium text-black">R$ 18.90</p>
+              <button
+                class="add-to-cart bg-black px-4 rounded"
+                data-name="Cheese Burger Duplo"
+                data-price="18.90"
+              >
+                <i class="fa fa-cart-plus text-lg"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img
+            class="h-28 w-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+            src="./assets/hamb-2.png"
+            alt="Cheese Salada"
+          />
+
+          <div class="w-full flex flex-col justify-around">
+            <strong class="font-bold text-sm text-black">Cheese Salada</strong>
+            <p class="text-xs leading-relaxed text-black">
+              Pão levinho de fermentação natural da Trigou, burger 160g, queijo
+              prato e maionese da casa.
+            </p>
+
+            <div class="flex items-center gap-2 justify-between">
+              <p class="text-base font-medium text-black">R$ 38.90</p>
+              <button
+                class="add-to-cart bg-black px-4 rounded"
+                data-name="Cheese Salada"
+                data-price="38.90"
+              >
+                <i class="fa fa-cart-plus text-lg"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img
+            class="h-28 w-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+            src="./assets/hamb-3.png"
+            alt="Cheese Triplo"
+          />
+
+          <div class="w-full flex flex-col justify-around">
+            <strong class="font-bold text-sm text-black">Cheese Triplo</strong>
+            <p class="text-xs leading-relaxed text-black">
+              Pão levinho de fermentação natural da Trigou, burger 160g, queijo
+              prato e maionese da casa.
+            </p>
+
+            <div class="flex items-center gap-2 justify-between">
+              <p class="text-base font-medium text-black">R$ 40.90</p>
+              <button
+                class="add-to-cart bg-black px-4 rounded"
+                data-name="Cheese Triplo"
+                data-price="40.90"
+              >
+                <i class="fa fa-cart-plus text-lg"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img
+            class="h-28 w-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+            src="./assets/hamb-3.png"
+            alt="Cheese Bacon"
+          />
+
+          <div class="w-full flex flex-col justify-around">
+            <strong class="font-bold text-sm text-black">Cheese Bacon</strong>
+            <p class="text-xs leading-relaxed text-black">
+              Pão levinho de fermentação natural da Trigou, burger 160g, queijo
+              prato e maionese da casa.
+            </p>
+
+            <div class="flex items-center gap-2 justify-between">
+              <p class="text-base font-medium text-black">R$ 28.90</p>
+              <button
+                class="add-to-cart bg-black px-4 rounded"
+                data-name="Cheese Bacon"
+                data-price="28.90"
+              >
+                <i class="fa fa-cart-plus text-lg"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="mx-auto max-w-7xl px-4 pt-11 pb-4">
+        <h2 class="font-bold text-2xl text-black text-left">Bebidas</h2>
+      </div>
+
+      <section
+        class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 mx-auto max-w-7xl px-4"
+        id="menu"
+      >
+        <div class="flex gap-2 w-full">
+          <img
+            class="h-28 w-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+            src="./assets/refri-1.png"
+            alt="Cola cola Lata"
+          />
+
+          <div class="w-full flex flex-col justify-around">
+            <strong class="font-bold text-sm text-black">Cola cola Lata</strong>
+
+            <div class="flex items-center gap-2 justify-between">
+              <p class="text-base font-medium text-black">R$ 6.00</p>
+              <button
+                class="add-to-cart bg-black px-4 rounded"
+                data-name="Cola cola Lata"
+                data-price="6.00"
+              >
+                <i class="fa fa-cart-plus text-lg"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2 w-full">
+          <img
+            class="h-28 w-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+            src="./assets/refri-2.png"
+            alt="Guarana Lata"
+          />
+
+          <div class="w-full flex flex-col justify-around">
+            <strong class="font-bold text-sm text-black">Guarana Lata</strong>
+
+            <div class="flex items-center gap-2 justify-between">
+              <p class="text-base font-medium text-black">R$ 5.00</p>
+              <button
+                class="add-to-cart bg-black px-4 rounded"
+                data-name="Guarana Lata"
+                data-price="5.00"
+              >
+                <i class="fa fa-cart-plus text-lg"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div
+      id="cart-modal"
+      class="items-center justify-center bg-black/60 w-full h-full fixed top-0 left-0 z-[99] hidden"
+    >
+      <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+        <h2 class="text-black font-bold text-2xl mb-2">Meu carrinho</h2>
+
+        <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+
+        <p class="font-bold text-black">
+          Total: <span id="cart-total">0.00</span>
+        </p>
+
+        <p class="font-bold text-black mt-4">Endereço de entrega:</p>
+        <input
+          type="text"
+          placeholder="Digite seu endereço completo..."
+          id="address"
+          class="w-full border-2 p-1 rounded my-1"
+        />
+        <p class="text-red-500 hidden" id="address-warn">
+          Digite seu endereço completo
+        </p>
+
+        <div class="flex items-center justify-between mt-5 w-full">
+          <button id="close-modal-btn" class="text-black">Fechar</button>
+          <button
+            id="checkout-btn"
+            class="bg-green-500 text-white px-4 py-1 rounded"
+          >
+            Finalizar pedido
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <footer
+      class="flex items-center justify-center gap-2 bg-footer py-3 w-full fixed bottom-0 z-40"
+    >
+      <button
+        id="card-btn"
+        class="font-bold flex items-center justify-center gap-2"
+      >
+        (<span id="card-conut">1</span>) Veja seu carrinho
+        <i class="fa fa-shopping-cart text-xl"></i>
+      </button>
     </footer>
   </body>
 </html>
